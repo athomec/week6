@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+/* --------------基本設定開始--------------- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	-webkit-text-size-adjust: none;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	font-family: 'Lato', sans-serif;
+	line-height: 1.5;
+	font-size: $font-md;
+	&.sm {
+		zoom: 0.9;
+	}
+	&.lg {
+		zoom: 1.1;
+	}
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	font-size: 1px;
+	line-height: 0px;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+a,
+a:hover {
+	transition: all 0.2s ease;
+	display: block;
+	text-decoration: none;
+}
+a:focus{
+	outline: none;
+}
+button{
+	background: none;
+}
+.dropdown-toggle{
+	font-weight: bold;
+}

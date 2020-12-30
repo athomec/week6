@@ -1,0 +1,9 @@
+.submenu{
+    background: $highlightColor;
+    margin: 56px 0 80px 0;
+    height: 52px;
+    line-height: 52px;
+    .link-light{
+        font-size: $font-lg;
+    }
+}

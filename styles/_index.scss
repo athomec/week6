@@ -1,0 +1,70 @@
+.banner {
+    &.banner--primary {
+        background: url(../images/banner.jpg) no-repeat center;
+        background-size: cover;
+        height: 870px;
+        margin-top: 56px;
+        color: $white;
+        @include iPad-below{
+            height: 480px;
+        }
+    }
+    &.banner--secondary{
+        background: url(../images/banner1.jpg) no-repeat center;
+        background-size: cover;
+        height: 600px;
+    }
+    .banner__title {
+        font-size: $font-xxxl;
+        font-weight: bold;
+        @include iPad-below{
+            font-size: $font-xxl;
+        }
+    }
+    .banner__txt {
+        font-size: $font-xl;
+        @include iPad-below{
+            font-size: $font-lg;
+        }
+    }
+    .banner__btn {
+        font-size: $font-xxl;
+        padding: 0 80px;
+        @include iPad-below{
+            font-size: $font-xl;
+        }
+    }
+    .banner__hightlight{
+        font-size: $font-xxl;
+        font-weight: bold;
+        color: $baseColor;
+    }
+}
+.intro {
+    .intro__group{
+
+    }
+    .intro__item {
+        overflow: hidden;
+        width: 50%;
+        @include iPad-below{
+            width: 100%;
+        }
+    }
+    .intro__item__title {
+        font-size: $font-xxl;
+        font-weight: bold;
+    }
+    .intro__item__txt {
+        font-size: $font-lg;
+    }
+    .intro__item__subtitle {
+        font-size: $font-xl;
+        font-weight: bold;
+    }
+    .intro__item__btn {
+        font-size: $font-lg;
+        height: 50px;
+        line-height: 45px;
+    }
+}
