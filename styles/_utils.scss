@@ -24,7 +24,6 @@
 }
 .delete-txt{
     color: $baseColor;
-    text-decoration: line-through;
 }
 /* --------------區塊設定開始--------------- */
 .sale {
@@ -59,7 +58,10 @@
     }
 }
 .item-box {
-    max-width: 350px;
+    max-width: 65%;
+    @include iPad-below{
+        max-width: 100%;
+    }
 }
 .page{
     .page--active{
